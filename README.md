@@ -4,8 +4,8 @@
 
 --- 
 ## Lab
-1. [Exp 12(A)](./lab/Exp12_A)
-2. [Exp 01](./lab/Exp_01)
+1. [Exp 01](./lab/Exp_01)
+2. [Exp 12(A)](./lab/Exp12_A)
 ---
 ## Theory
 1. [Task 1](./Theory/Task_1)
