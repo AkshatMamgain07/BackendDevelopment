@@ -19,6 +19,10 @@ app.get('/delete-cookie', (req, res) => {
     res.send('Cookie deleted');
 });
 
+app.get('/', (req, res) => {
+    res.send('Cookie Example Server is Running');
+});
+
 app.listen(3000, () => {
     console.log('Server running on http://localhost:3000');
 });
