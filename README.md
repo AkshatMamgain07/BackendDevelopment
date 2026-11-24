@@ -3,13 +3,7 @@
 **Student Name:** Akshat Mamgain  
 **SAP ID:** 590014875  
 
-A comprehensive repository containing **Backend Development coursework, practical laboratory experiments, theoretical implementations, and coursework assignments**.
-
-This repository covers full-stack and server-side engineering across multiple language ecosystems (JavaScript/Node.js, Python), web frameworks (Express.js, FastAPI, Django, Flask), databases (MongoDB, SQLite, PostgreSQL), templating engines (EJS, Jinja2), containerization (Docker, Nginx), and automated CI/CD pipelines.
-
----
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 BackendDevelopment/
@@ -57,7 +51,7 @@ BackendDevelopment/
 
 ---
 
-## 🧪 Laboratory Experiments (`lab/`)
+## Lab Experiments (`lab/`)
 
 | Experiment | Directory | Core Concepts & Technologies |
 | :--- | :--- | :--- |
@@ -74,7 +68,7 @@ BackendDevelopment/
 
 ---
 
-## 📚 Theory Implementations (`Theory/`)
+## Theory (`Theory/`)
 
 * **Unit 1: Foundations & Templating**
   * [`Theory/Task_1`](./Theory/Task_1) – Express.js + EJS SSR dynamic templating.
@@ -102,7 +96,7 @@ BackendDevelopment/
 
 ---
 
-## 📝 Coursework Assignments (`Assignment/`)
+## Assignments (`Assignment/`)
 
 1. **[`Assignment 1: Notes App`](./Assignment/notes-app)**  
    Interactive note-taking web application with dynamic DOM rendering, editing, and `localStorage` persistence.
@@ -111,7 +105,7 @@ BackendDevelopment/
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 | Category | Technologies |
 | :--- | :--- |
