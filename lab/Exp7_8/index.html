@@ -2,24 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ES6 To-Do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overview and instructions for JavaScript lab experiments 7 and 8.">
+    <title>Experiments 7 &amp; 8 – JavaScript ES6 To-Do App</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
-        input { padding: 8px; width: 70%; }
-        button { padding: 8px 16px; cursor: pointer; }
-        ul { list-style: none; padding: 0; }
-        li { padding: 10px; border-bottom: 1px solid #ddd;
-             display: flex; justify-content: space-between; }
-        .done { text-decoration: line-through; color: gray; }
-        .delete-btn { background: red; color: white; border: none; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 2rem 1rem; color: #233044; background: #f3f6fb; font: 16px/1.6 Arial, sans-serif; }
+        main { max-width: 780px; margin: 0 auto; padding: 2rem; background: #fff; border-radius: 14px; box-shadow: 0 8px 30px #26364b18; }
+        h1, h2 { line-height: 1.25; color: #17243a; }
+        h1 { margin-top: 0; }
+        a.button { display: inline-block; margin: .5rem 0 1rem; padding: .7rem 1rem; border-radius: 7px; color: #fff; background: #2457c5; text-decoration: none; font-weight: 700; }
+        a.button:hover, a.button:focus { background: #183f96; }
+        code { padding: .1rem .35rem; border-radius: 4px; background: #edf1f7; }
+        @media (max-width: 520px) { main { padding: 1.25rem; } }
     </style>
 </head>
 <body>
-    <h1>My To-Do List</h1>
-    <input type="text" id="taskInput" placeholder="Enter a task...">
-    <button id="addBtn">Add</button>
-    <ul id="taskList"></ul>
+<main>
+    <h1>Lab Experiments 7 and 8</h1>
+    <p><strong>Aim:</strong> Build a simple to-do list using JavaScript ES6 features and DOM event handling.</p>
 
-    <script src="app.js"></script>
+    <h2>Open the To-Do App</h2>
+    <p>Try adding tasks, marking them complete, and deleting them.</p>
+    <a class="button" href="todo.html">Launch the To-Do App</a>
+
+    <h2>How to Use It</h2>
+    <ol>
+        <li>Enter a task and select <strong>Add</strong> or press <strong>Enter</strong>.</li>
+        <li>Select a task to toggle its completed state.</li>
+        <li>Select <strong>Delete</strong> to remove a task.</li>
+    </ol>
+
+    <h2>Concepts Demonstrated</h2>
+    <ul>
+        <li>ES6 classes and <code>let</code></li>
+        <li>Arrow functions, destructuring, and the spread operator</li>
+        <li>Array methods: <code>forEach</code>, <code>filter</code>, and <code>map</code></li>
+        <li>DOM creation, event delegation, and click and keyboard listeners</li>
+    </ul>
+
+    <p><strong>Note:</strong> Tasks are stored in memory and reset when the page is refreshed.</p>
+</main>
 </body>
 </html>
