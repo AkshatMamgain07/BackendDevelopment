@@ -115,3 +115,8 @@ BackendDevelopment/
 | **Databases & ORM/ODM** | MongoDB, Mongoose, PostgreSQL, SQLite, SQLAlchemy |
 | **Containerization & Networking** | Docker, Docker Compose, Nginx (Reverse Proxy & Upstream Load Balancing) |
 | **DevOps & CI/CD** | Git, GitHub, GitHub Actions, Docker Hub, `uv` |
+
+## GitHub Pages 
+
+https://akshatmamgain07.github.io/BackendDevelopment/
+
