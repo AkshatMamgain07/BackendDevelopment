@@ -24,5 +24,4 @@ Create an Express.js server that demonstrates text, HTML, and JSON responses; ro
 5. Visit `/home`, `/users`, and `/profile/42` to view pages rendered from EJS templates.
 6. Send POST requests to `/user`, `/register`, and `/login` with JSON or form data using a REST client such as Postman or the VS Code REST Client.
 
-## Important: GitHub Pages
-GitHub Pages serves static files only; it cannot run this Node.js/Express server. The Pages URL displays this experiment overview and local run instructions. Start the server locally to use its Express routes and EJS pages.
+
