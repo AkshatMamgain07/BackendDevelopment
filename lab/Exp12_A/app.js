@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
@@ -7,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // EJS View Engine Setup
 app.set('view engine', 'ejs');
-app.set('views', './views');
+app.set('views', path.join(__dirname, 'views'));
 
 // ============================================================
 // PART A - Basic Route & Responses (Text, HTML, JSON)
@@ -156,5 +157,5 @@ app.get('/profile/:id', (req, res) => {
 // Start server
 // ============================================================
 app.listen(PORT, () => {
-    console.log(Server running at http://localhost:);
+    console.log(`Server running at http://localhost:${PORT}`);
 });
