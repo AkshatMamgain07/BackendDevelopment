@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse and download reports for Backend Development Lab experiments.">
+    <title>Backend Lab Reports</title>
+    <style>
+        :root { color-scheme: light; --ink: #14243b; --muted: #61718a; --line: #e0e7f0; --blue: #2457c5; --canvas: #f4f7fb; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--canvas); color: var(--ink); font: 16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+        .wrap { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+        header { padding: 64px 0 46px; color: white; background: radial-gradient(ellipse at 80% 0%, #5689ee 0, transparent 38%), linear-gradient(125deg, #142a4c, #1b3e70); }
+        .eyebrow { margin: 0 0 12px; color: #bcd0f4; font-size: .78rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+        h1 { max-width: 720px; margin: 0; font-size: clamp(2.25rem, 6vw, 4rem); letter-spacing: -.045em; line-height: 1.04; }
+        .intro { max-width: 650px; margin: 18px 0 0; color: #d9e4f5; font-size: 1.08rem; }
+        .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 30px 0 22px; }
+        .count { color: var(--muted); font-size: .92rem; }
+        .search { width: min(370px, 100%); padding: 12px 15px; border: 1px solid var(--line); border-radius: 10px; background: white; color: var(--ink); font: inherit; outline: none; }
+        .search:focus { border-color: #789be3; box-shadow: 0 0 0 3px #2457c51f; }
+        .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; padding-bottom: 64px; }
+        .card { display: flex; min-height: 230px; flex-direction: column; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: 0 5px 20px #172d4b08; transition: transform .18s ease, box-shadow .18s ease; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px #172d4b14; }
+        .tag { align-self: flex-start; margin-bottom: 13px; padding: 4px 9px; border-radius: 99px; background: #edf3ff; color: #2754a5; font-size: .75rem; font-weight: 750; }
+        .card h2 { margin: 0; font-size: 1.12rem; line-height: 1.35; }
+        .card p { flex: 1; margin: 9px 0 20px; color: var(--muted); font-size: .92rem; }
+        .actions { display: flex; flex-wrap: wrap; gap: 9px; }
+        .actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 39px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font-size: .85rem; font-weight: 700; text-decoration: none; }
+        .actions a.primary { border-color: var(--blue); background: var(--blue); color: white; }
+        .actions a:hover { filter: brightness(.94); }
+        .empty { display: none; grid-column: 1 / -1; padding: 30px; border: 1px dashed #b8c6d9; border-radius: 12px; color: var(--muted); text-align: center; }
+        footer { padding: 20px 0 35px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+        @media (max-width: 850px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        @media (max-width: 560px) { header { padding: 44px 0 34px; } .toolbar { align-items: stretch; flex-direction: column; } .grid { grid-template-columns: 1fr; } .card { min-height: 0; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="wrap">
+        <p class="eyebrow">Backend Development · Practical Lab</p>
+        <h1>Experiment reports,<br>all in one place.</h1>
+        <p class="intro">Browse the lab reports, open one to read it, or download its Markdown file for offline use.</p>
+    </div>
+</header>
+<main class="wrap">
+    <div class="toolbar">
+        <div class="count" id="count" aria-live="polite">8 reports</div>
+        <label>
+            <span class="sr-only" hidden>Search reports</span>
+            <input class="search" id="search" type="search" placeholder="Search experiment or topic…" aria-label="Search reports">
+        </label>
+    </div>
+    <section class="grid" id="reports" aria-label="Experiment reports">
+        <article class="card" data-search="experiment 1 html5 elements semantic forms multimedia">
+            <span class="tag">Experiment 01</span><h2>HTML5 Elements</h2>
+            <p>Semantic structure, forms, multimedia, and the major HTML5 elements.</p>
+            <div class="actions"><a href="Exp_01/README.md">Read report</a><a class="primary" href="Exp_01/README.md" download="Experiment-01-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiment 2 css external internal inline selectors layout animations">
+            <span class="tag">Experiment 02</span><h2>CSS Styling</h2>
+            <p>External, internal, and inline CSS, selectors, responsive layouts, and animation.</p>
+            <div class="actions"><a href="Exp2/README.md">Read report</a><a class="primary" href="Exp2/README.md" download="Experiment-02-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiments 7 8 javascript es6 todo app classes spread events">
+            <span class="tag">Experiments 07 &amp; 08</span><h2>JavaScript ES6 To-Do App</h2>
+            <p>Classes, array methods, event delegation, and interactive task management.</p>
+            <div class="actions"><a href="Exp7_8/README.md">Read report</a><a class="primary" href="Exp7_8/README.md" download="Experiments-07-08-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiment 12 a express node routes query post ejs server side rendering">
+            <span class="tag">Experiment 12(A)</span><h2>Express Routes &amp; EJS</h2>
+            <p>Response types, URL parameters, query strings, POST requests, and EJS pages.</p>
+            <div class="actions"><a href="Exp12_A/README.md">Read report</a><a class="primary" href="Exp12_A/README.md" download="Experiment-12A-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiment 12 b express cookies sessions state management">
+            <span class="tag">Experiment 12(B)</span><h2>Cookies &amp; Sessions</h2>
+            <p>Managing browser cookies and server-side sessions with Express.</p>
+            <div class="actions"><a href="Exp12_B/README.md">Read report</a><a class="primary" href="Exp12_B/README.md" download="Experiment-12B-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiment 13 mongoose mongodb odm schema validation crud user management">
+            <span class="tag">Experiment 13</span><h2>Mongoose User Management</h2>
+            <p>MongoDB ODM, schema validation, error handling, and CRUD operations.</p>
+            <div class="actions"><a href="mongoose-demo/README.md">Read report</a><a class="primary" href="mongoose-demo/README.md" download="Experiment-13-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="experiment 15 b django uv college students api todo">
+            <span class="tag">Experiment 15(B)</span><h2>Django &amp; uv College Project</h2>
+            <p>Multi-app Django project and Python package management with uv.</p>
+            <div class="actions"><a href="Exp15B/uv%20exp/college/README.md">Read report</a><a class="primary" href="Exp15B/uv%20exp/college/README.md" download="Experiment-15B-Report.md">↓ Download report</a></div>
+        </article>
+        <article class="card" data-search="exam 1 b eisenhower matrix todo express mongodb ejs priorities">
+            <span class="tag">Exam 01(B)</span><h2>Eisenhower Matrix To-Do App</h2>
+            <p>Server-rendered task manager that organizes tasks by importance and urgency.</p>
+            <div class="actions"><a href="Exam01B/README.md">Read report</a><a class="primary" href="Exam01B/README.md" download="Exam-01B-Report.md">↓ Download report</a></div>
+        </article>
+        <p class="empty" id="empty">No reports match that search. Try another experiment name or topic.</p>
+    </section>
+</main>
+<footer><div class="wrap">Backend Development Lab · Reports are provided as Markdown files.</div></footer>
+<script>
+    const search = document.getElementById('search');
+    const cards = [...document.querySelectorAll('.card')];
+    const count = document.getElementById('count');
+    const empty = document.getElementById('empty');
+    search.addEventListener('input', () => {
+        const query = search.value.trim().toLowerCase();
+        let visible = 0;
+        cards.forEach(card => {
+            const match = `${card.dataset.search} ${card.textContent}`.toLowerCase().includes(query);
+            card.hidden = !match;
+            if (match) visible++;
+        });
+        count.textContent = `${visible} ${visible === 1 ? 'report' : 'reports'}`;
+        empty.style.display = visible ? 'none' : 'block';
+    });
+</script>
+</body>
+</html>
