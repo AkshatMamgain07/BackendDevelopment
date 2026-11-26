@@ -2,7 +2,7 @@
 
 This directory contains the complete set of practical laboratory experiments completed as part of the **Backend Development Lab** coursework.
 
-Browse the [Lab Reports website](./index.html) for searchable reports with download buttons.
+Browse the [Lab Reports website](./index.html) for searchable reports with download buttons. Each of the ten downloadable experiment PDFs includes the aim, requirements, concepts, procedure, learning outcome, and a representative code snippet with its source file.
 
 The experiments focus on implementing core backend concepts across diverse technology stacks, web frameworks, templating systems, database layers, and containerized architectures.
 
