@@ -3,6 +3,13 @@
 **Student Name:** Akshat Mamgain  
 **SAP ID:** 590014875  
 
+## Portfolio
+
+Visit the [Backend Development portfolio](./index.html) for an overview of my work, technology toolkit, and searchable project cards. The site includes all ten practical lab experiments, theory exercises, and both assignments. The [lab report library](./lab/index.html) provides searchable PDF downloads for every experiment with a generated report.
+
+- **GitHub:** [AkshatMamgain07/BackendDevelopment](https://github.com/AkshatMamgain07/BackendDevelopment)
+- **GitHub Pages:** [akshatmamgain07.github.io/BackendDevelopment](https://akshatmamgain07.github.io/BackendDevelopment/)
+
 ## Repository Structure
 
 ```text
